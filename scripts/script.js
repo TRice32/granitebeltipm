@@ -68,3 +68,12 @@ let playSlides = setInterval(() => {
     slideIndex > 3 ? slideIndex = 1 :slideIndex += 1
     showSlides();
 }, time)
+
+const menu = document.querySelector(".menuContainer")
+const burger = document.querySelector(".burgerContainer")
+
+burger.addEventListener("click", function() {
+
+    menu.classList.toggle("menuContainerSelected")
+    // console.log(menu.style.transform)
+})
